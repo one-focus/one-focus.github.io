@@ -1,1 +1,79 @@
-Hello World
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One-Focus ▸ Digital Playground</title>
+
+  <!-- Небольшой встроенный CSS -->
+  <style>
+    :root {
+      --accent: #2a7be4;
+      --bg: #fdfdfd;
+      --text: #222;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.5;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header, main, footer { width: 90%; max-width: 720px; margin: auto; }
+    header { padding: 3rem 0 2rem; text-align: center; }
+    header h1 { font-size: 2.75rem; margin-bottom: .25em; }
+    header p  { color: #555; }
+    .card {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: 0 6px 24px rgba(0,0,0,.05);
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    a.btn {
+      display: inline-block;
+      padding: .75rem 1.25rem;
+      border-radius: var(--radius);
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      transition: .2s;
+    }
+    a.btn:hover { filter: brightness(1.07); }
+    footer { margin-top: auto; padding: 2rem 0; text-align: center; font-size: .875rem; color: #777; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>One-Focus</h1>
+    <p>Side-projects, automations and notes in public.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>About this site</h2>
+      <p>👋 Привет! Это мой публичный «песочница»-сайт для экспериментов с frontend-технологиями, нодой n8n и автоматизацией рабочих процессов.</p>
+      <p>Здесь буду делиться заметками, мини-утилитами и ссылками на GitHub-репозитории.</p>
+      <a href="https://github.com/one-focus" class="btn">GitHub Profile</a>
+    </section>
+
+    <section class="card">
+      <h2>Latest experiments</h2>
+      <ul>
+        <li>🔗 <strong>n8n + Google API</strong> — скрипт для вечного токена (см. блог-пост).</li>
+        <li>⚡ <strong>Zapier → n8n миграция</strong> — заметка с наблюдениями.</li>
+        <li>🌈 <strong>A11y-Color-Picker</strong> — утилита на Canvas для WCAG-контраста.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 One-Focus | Made with ❤ on GitHub Pages
+  </footer>
+</body>
+</html>
